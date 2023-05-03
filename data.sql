@@ -7,6 +7,8 @@ VALUES
 ('Pikachu', '2021-01-7', 1, false, 15.04),
 ('Devimon', '2017-05-12', 5, true, 11);
 
+/* Adding new animal data */
+
 INSERT INTO animals  (name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES 
 ('Charmander', '2020-02-08', 0, false,-11), 
