@@ -32,3 +32,12 @@ SET species = 'pokemon'
 WHERE species IS NULL;
 
 COMMIT;
+
+/* Delete all records in the animals table and roll back afterwards */
+
+BEGIN;
+DELETE FROM animals;
+-- Verify that animals are deleted
+
+SELECT * FROM animals;
+ROLLBACK;
