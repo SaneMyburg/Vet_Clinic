@@ -41,3 +41,25 @@ DELETE FROM animals;
 
 SELECT * FROM animals;
 ROLLBACK;
+
+-- Delete all animals born after January 1 2022
+
+DELETE FROM animals
+WHERE date_of_birth > '2022-01-01';
+
+-- Create a savepoint and update and rollback savepoint all animals' weight multiplied by -1 to their weight.
+
+SAVEPOINT sv1;
+UPDATE animals
+SET weight_kg = -1 * weight_kg;
+
+ROLLBACK TO sv1;
+
+-- Update all animals' weights that are negative to be their weight multiplied by -1.
+
+UPDATE animals
+SET weight_kg = -1 * weight_kg
+WHERE weight_kg < 0;
+
+COMMIT;
+SELECT * FROM animals;
