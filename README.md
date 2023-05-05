@@ -80,7 +80,11 @@ In order to run this project you need:
 
 ### Setup
 
-Clone this repository to your desired folder:
+1. Clone this repository to your desired folder by running the following commands in your terminal:
+ git clone https://github.com/SaneMyburg/Vet_Clinic.git
+
+2. To access the cloned directory run: 
+  cd Vet_Clinic
 
 ### Install
 
