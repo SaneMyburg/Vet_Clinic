@@ -42,7 +42,7 @@ CREATE TABLE vets (
   id SERIAL PRIMARY KEY,
   name VARCHAR(255),
   age INT,
-  date_of_garduation DATE
+  date_of_graduation DATE
 );
 
 -- Create a join table: specializations
